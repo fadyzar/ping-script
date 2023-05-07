@@ -1,0 +1,16 @@
+#!/bin/bash 
+# Author: Fady zarka
+# Date: 09/05/2023 
+# Description: This script will ping a remote host and notify 
+# Modified : 09/05/2023 
+ 
+
+ hosts='127.0.0.1' &> /dev/null 
+ ping -c1 $hosts 
+ 	if [ $? -eq 0 ] 
+	then 
+	echo $hosts is  OK
+	else 
+	echo $hosts is  NOT OK
+	fi 
+
