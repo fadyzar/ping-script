@@ -3,7 +3,7 @@
 # Date: 07/05/2023
 # Description: This script will ping multiple remote hosts and notify 
 
-hosts="/private/etc/hosts"
+hosts="/private/etc/hosts" #THIS PATH IN MACOS (IF YOU NOT IN MAC SO SEARCH FOR YOURE HOSTS DIRECTORY PATH) 
 
 for ip in $( cat $hosts)
 do 
