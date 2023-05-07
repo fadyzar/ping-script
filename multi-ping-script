@@ -1,0 +1,18 @@
+#!/bin/bash 
+# Author: Fady zarka
+# Date: 07/05/2023
+# Description: This script will ping multiple remote hosts and notify 
+
+hosts="/private/etc/hosts"
+
+for ip in $( cat $hosts)
+do 
+	ping -c1 $ip 
+	if [ $? -eq 0 ]
+	then 
+	echo $ip is ok 
+	else 
+	echo $ip is not ok 
+	fi 
+done
+
